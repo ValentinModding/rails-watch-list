@@ -1,5 +1,9 @@
-<h1>New List</h1>
-
-<%= render 'form', list: @list %>
-
-<%= link_to 'Back', lists_path %>
+<h1>List</h1>
+<% movies = @list.movies %>
+<% movies.each do |movie| %>
+<div class="card">
+  <div class="card-title"><%= movie.title %></div>
+  <div class="card-description"><%= movie.overview %></div>
+</div>
+<% end %>
+<div class="btn btn-primary"><%= link_to "Create Bookmark",  new_list_bookmark_path(@list) %></div>
