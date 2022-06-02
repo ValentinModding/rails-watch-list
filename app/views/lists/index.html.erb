@@ -1,0 +1,7 @@
+<h1>All your lists</h1>
+<% @lists.each do |list| %>
+<ul>
+  <li><%= list.id %></li>
+  <li><%= list.name %></li>
+</ul>
+<% end %>
