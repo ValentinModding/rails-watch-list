@@ -19,3 +19,12 @@
   width: 0px;
 	height: 10px;
 }
+
+body {
+  top: 0;
+  padding: 0;
+  background-image: url(asset_path("nav.jpg"));
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

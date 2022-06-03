@@ -1,0 +1,26 @@
+.create-form {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.386);
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url(asset_path("nav.jpg"));
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 450px;
+  .btn {
+    background-color: aqua;
+  }
+  padding-top: 300px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.container-new {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
