@@ -1,3 +1,6 @@
+<div class="header">
+  <h1>All your lists</h1>
+</div>
 <div class="container m-20 mt-5">
   <div class="cards">
     <% @lists.each do |list| %>
@@ -7,5 +10,10 @@
         </div>
       <% end %>
     <% end %>
+        <%= link_to new_list_path do %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path("list_base.jpg") %>)">
+          <h1>-</h1><span>New List</span><h1>-</h1>
+        </div>
+        <% end %>
   </div>
 </div>
