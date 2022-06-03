@@ -2,7 +2,7 @@
   <div class="cards">
     <% @lists.each do |list| %>
       <%= link_to list_path(list) do  %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://imgs.search.brave.com/EaZOT_FveDxG3aqf4oWihO9m_iV_pPuaHbW00KZ871Q/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5M/ZnZuVzBsYU1IT1p2/Rk5YTnZwVmhnSGFF/SyZwaWQ9QXBp)">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : asset_path("list_base.jpg") %>)">
           <h1><%= list.name.upcase %></h1>
         </div>
       <% end %>
